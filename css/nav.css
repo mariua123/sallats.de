@@ -1,0 +1,26 @@
+.navigation {
+  float: right;
+  right: 0px;
+  top: 12vh;
+  position: absolute; }
+  .navigation li p {
+    font-size: 15vh;
+    color: rgba(255, 255, 255, 0.05);
+    font-weight: 100;
+    text-align: right;
+    min-width: 30vw; }
+    .navigation li p.active {
+      color: #ffffff; }
+    .navigation li p:hover {
+      cursor: default; }
+
+.inactive {
+  visibility: hidden; }
+
+.deactivated {
+  display: none; }
+
+.invisible {
+  opacity: 0; }
+
+/*# sourceMappingURL=nav.css.map */
