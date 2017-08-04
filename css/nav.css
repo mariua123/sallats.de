@@ -1,18 +1,47 @@
 .navigation {
-  float: right;
-  right: 0px;
-  top: 12vh;
   position: absolute; }
   .navigation li p {
-    font-size: 15vh;
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.2);
     font-weight: 100;
-    text-align: right;
     min-width: 30vw; }
     .navigation li p.active {
       color: #ffffff; }
     .navigation li p:hover {
       cursor: default; }
+  .navigation.right {
+    right: 0;
+    top: 0; }
+    .navigation.right li p {
+      font-size: 15vh;
+      text-align: right; }
+    .navigation.right.small li p {
+      font-size: 10vh; }
+  .navigation.left {
+    left: 0;
+    top: 0; }
+    .navigation.left li p {
+      font-size: 15vh;
+      text-align: left; }
+    .navigation.left.small li p {
+      font-size: 8vh; }
+  .navigation.bottom {
+    left: 0;
+    bottom: 0; }
+    .navigation.bottom li {
+      display: inline; }
+      .navigation.bottom li p {
+        font-size: 4vw;
+        text-align: left;
+        display: inline; }
+  .navigation.top {
+    left: 0;
+    top: 0; }
+    .navigation.top li {
+      display: inline; }
+      .navigation.top li p {
+        font-size: 4vw;
+        text-align: left;
+        display: inline; }
 
 .inactive {
   visibility: hidden; }
@@ -22,5 +51,44 @@
 
 .invisible {
   opacity: 0; }
+
+.cd-vertical-nav {
+  /* lateral navigation */
+  position: fixed;
+  z-index: 1;
+  left: 2%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none; }
+  .cd-vertical-nav a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    /* image replace */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: url(../img/cd-icon-arrow.svg) no-repeat center center; }
+    .cd-vertical-nav a.cd-prev {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      margin-bottom: 10px; }
+    .cd-vertical-nav a.inactive {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+      -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+      transition: opacity 0.2s 0s, visibility 0s 0.2s; }
+  @media only screen and (min-width: 1050px) {
+    .cd-vertical-nav {
+      display: block; } }
 
 /*# sourceMappingURL=nav.css.map */

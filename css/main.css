@@ -1,0 +1,91 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+  background-color: #142a34;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  body::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'mobile';
+    display: none; }
+  @media only screen and (min-width: 1050px) {
+    body::before {
+      /* never visible - this is used in jQuery to check the current MQ */
+      content: 'desktop'; } }
+
+a {
+  color: #91AA9D;
+  text-decoration: none; }
+
+.cd-section {
+  height: 100vh; }
+  .cd-section h2 {
+    line-height: 100vh;
+    text-align: center;
+    font-size: 2.4rem; }
+  .cd-section .contentWrapper {
+    position: absolute;
+    top: 47vh;
+    font-size: 2.4rem;
+    text-align: center; }
+    .cd-section .contentWrapper.centered {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 50px;
+      right: 0;
+      left: 0; }
+    .cd-section .contentWrapper.fullscreen {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      right: 0;
+      left: 0;
+      top: 0; }
+  .cd-section .logoWrapper {
+    position: absolute;
+    bottom: -3px; }
+    .cd-section .logoWrapper img {
+      height: 16vh; }
+    .cd-section .logoWrapper.left {
+      left: 0; }
+    .cd-section .logoWrapper.right {
+      right: 0; }
+  .cd-section * {
+    box-sizing: border-box; }
+  .cd-section .bx-wrapper ul li .video-background {
+    z-index: 999;
+    height: 100vh; }
+    .cd-section .bx-wrapper ul li .video-background .video-foreground,
+    .cd-section .bx-wrapper ul li .video-background .video-foreground iframe {
+      width: 100vw;
+      height: 100vh; }
+    .cd-section .bx-wrapper ul li .video-background #vidtop-content {
+      top: 0;
+      color: #fff; }
+  .cd-section .bx-wrapper .bx-controls {
+    top: -100vh;
+    position: relative;
+    height: 0;
+    z-index: 99; }
+    .cd-section .bx-wrapper .bx-controls .bx-controls-direction {
+      height: 0;
+      width: 100vw; }
+      .cd-section .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
+        position: absolute;
+        left: 0;
+        cursor: url(../img/3_gallery_links_50.png), auto !important; }
+      .cd-section .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
+        position: absolute;
+        right: 0;
+        cursor: url(../img/3_gallery_rechts_50.png), auto !important; }
+      .cd-section .bx-wrapper .bx-controls .bx-controls-direction a {
+        width: 35vw;
+        height: 100vh;
+        color: transparent; }
+
+/*# sourceMappingURL=main.css.map */
